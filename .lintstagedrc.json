@@ -1,0 +1,10 @@
+{
+  "*.{ts,tsx}": [
+    "bash -c tsc --emitDeclarationOnly false --noEmit",
+    "eslint --fix",
+    "prettier --write",
+    "jest --bail --findRelatedTests"
+  ],
+  "*.{json,yml,md}": "prettier --write",
+  "package.json": "sort-package-json"
+}
