@@ -66,3 +66,22 @@ jobs:
         with:
           name: coverage
           path: coverage
+  deploy-storybook:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: [build, lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Download storybook-static
+        uses: actions/download-artifact@v2
+        with:
+          name: storybook-static
+          path: storybook-static
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=storybook-static --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
