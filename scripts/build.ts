@@ -4,9 +4,6 @@ import * as pkg from '../package.json';
 
 const commonBuildOptions: BuildOptions = {
   bundle: true,
-  define: {
-    'process.env.NODE_ENV': 'production',
-  },
   entryPoints: ['src/index.ts'],
   external: [
     ...Object.keys(pkg.dependencies),
