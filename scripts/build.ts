@@ -8,7 +8,10 @@ const commonBuildOptions: BuildOptions = {
     'process.env.NODE_ENV': 'production',
   },
   entryPoints: ['src/index.ts'],
-  external: [...Object.keys(pkg.peerDependencies)],
+  external: [
+    ...Object.keys(pkg.dependencies),
+    ...Object.keys(pkg.peerDependencies),
+  ],
   minify: true,
   sourcemap: true,
 };

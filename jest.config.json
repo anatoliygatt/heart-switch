@@ -2,6 +2,10 @@
   "clearMocks": true,
   "coverageDirectory": "coverage",
   "preset": "ts-jest",
-  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-dom/extend-expect",
+    "jest-axe/extend-expect"
+  ],
+  "snapshotSerializers": ["@emotion/jest/serializer"],
   "testEnvironment": "jsdom"
 }

@@ -1,0 +1,538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeartSwitch renders with the default size and colors 1`] = `
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(9px);
+    -moz-transform: rotate(30deg) translateX(9px);
+    -ms-transform: rotate(30deg) translateX(9px);
+    transform: rotate(30deg) translateX(9px);
+  }
+
+  100% {
+    -webkit-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    -moz-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    -ms-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    -moz-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    -ms-transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(9px);
+    -moz-transform: rotate(30deg) translateX(9px);
+    -ms-transform: rotate(30deg) translateX(9px);
+    transform: rotate(30deg) translateX(9px);
+  }
+
+  75% {
+    -webkit-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+  }
+
+  100% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+.emotion-0 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.emotion-0 input {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  -webkit-transition: border-width 50ms,background-color 350ms;
+  transition: border-width 50ms,background-color 350ms;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  margin: 0;
+  box-shadow: 0 0 2px 1px rgb(23 23 23 / 0.25);
+  outline: none;
+  border: 0 solid rgb(59 130 246 / 0.5);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.emotion-0 input+svg {
+  display: block;
+  -webkit-transition: fill 350ms,stroke 350ms;
+  transition: fill 350ms,stroke 350ms;
+  width: 36px;
+  height: 25px;
+  fill: #ffffff;
+  stroke: #d1d1d1;
+  stroke-linejoin: round;
+}
+
+.emotion-0 input:checked {
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: #ffffff;
+}
+
+.emotion-0 input:checked+svg {
+  fill: #ff708f;
+  stroke: #ff4e74;
+}
+
+.emotion-0 input:not(:checked) {
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.emotion-0 input:focus {
+  border-width: 1px;
+}
+
+.emotion-0 input:focus:not(:focus-visible) {
+  border-width: 0;
+}
+
+.emotion-0 input:focus-visible {
+  border-width: 1px;
+}
+
+.emotion-0 input:invalid {
+  background-color: #ffffff;
+}
+
+.emotion-0 input:invalid+svg {
+  fill: #ffffff;
+  stroke: #d1d1d1;
+}
+
+.emotion-0[data-disabled='true'] {
+  cursor: default;
+}
+
+.emotion-0[data-disabled='true'] input {
+  background-color: #ffffff;
+}
+
+.emotion-0[data-disabled='true'] input+svg {
+  fill: #f2f2f2;
+  stroke: #d1d1d1;
+}
+
+<label
+  class="emotion-0"
+  data-disabled="false"
+  data-testid="heart-switch"
+>
+  <input
+    role="switch"
+    style="animation-duration: 350ms;"
+    type="checkbox"
+  />
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 33 23"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M23.5,0.5 C28.4705627,0.5 32.5,4.52943725 32.5,9.5 C32.5,16.9484448 21.46672,22.5 16.5,22.5 C11.53328,22.5 0.5,16.9484448 0.5,9.5 C0.5,4.52952206 4.52943725,0.5 9.5,0.5 C12.3277083,0.5 14.8508336,1.80407476 16.5007741,3.84362242 C18.1491664,1.80407476 20.6722917,0.5 23.5,0.5 Z"
+    />
+  </svg>
+</label>
+`;
+
+exports[`HeartSwitch renders with the size="lg" and custom colors 1`] = `
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    transform: rotate(30deg) translateX(9px) scaleX(1.1);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(18px);
+    -moz-transform: rotate(30deg) translateX(18px);
+    -ms-transform: rotate(30deg) translateX(18px);
+    transform: rotate(30deg) translateX(18px);
+  }
+
+  100% {
+    -webkit-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    -moz-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    -ms-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    transform: rotate(-30deg) translateX(27px) translateY(16px);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    -moz-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    -ms-transform: rotate(-30deg) translateX(27px) translateY(16px);
+    transform: rotate(-30deg) translateX(27px) translateY(16px);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(18px);
+    -moz-transform: rotate(30deg) translateX(18px);
+    -ms-transform: rotate(30deg) translateX(18px);
+    transform: rotate(30deg) translateX(18px);
+  }
+
+  75% {
+    -webkit-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(9px) scaleX(1.1);
+    transform: rotate(30deg) translateX(9px) scaleX(1.1);
+  }
+
+  100% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+.emotion-0 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.emotion-0 input {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transition: border-width 50ms,background-color 350ms;
+  transition: border-width 50ms,background-color 350ms;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  margin: 0;
+  box-shadow: 0 0 4px 2px rgb(23 23 23 / 0.25);
+  outline: none;
+  border: 0 solid rgb(59 130 246 / 0.5);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #ecfeff;
+  pointer-events: none;
+}
+
+.emotion-0 input+svg {
+  display: block;
+  -webkit-transition: fill 350ms,stroke 350ms;
+  transition: fill 350ms,stroke 350ms;
+  width: 72px;
+  height: 50px;
+  fill: #cffafe;
+  stroke: #22d3ee;
+  stroke-linejoin: round;
+}
+
+.emotion-0 input:checked {
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: #ecfeff;
+}
+
+.emotion-0 input:checked+svg {
+  fill: #06b6d4;
+  stroke: #0891b2;
+}
+
+.emotion-0 input:not(:checked) {
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.emotion-0 input:focus {
+  border-width: 2px;
+}
+
+.emotion-0 input:focus:not(:focus-visible) {
+  border-width: 0;
+}
+
+.emotion-0 input:focus-visible {
+  border-width: 2px;
+}
+
+.emotion-0 input:invalid {
+  background-color: #ffffff;
+}
+
+.emotion-0 input:invalid+svg {
+  fill: #ffffff;
+  stroke: #d1d1d1;
+}
+
+.emotion-0[data-disabled='true'] {
+  cursor: default;
+}
+
+.emotion-0[data-disabled='true'] input {
+  background-color: #ffffff;
+}
+
+.emotion-0[data-disabled='true'] input+svg {
+  fill: #f2f2f2;
+  stroke: #d1d1d1;
+}
+
+<label
+  class="emotion-0"
+  data-disabled="false"
+  data-testid="heart-switch"
+>
+  <input
+    role="switch"
+    style="animation-duration: 350ms;"
+    type="checkbox"
+  />
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 33 23"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M23.5,0.5 C28.4705627,0.5 32.5,4.52943725 32.5,9.5 C32.5,16.9484448 21.46672,22.5 16.5,22.5 C11.53328,22.5 0.5,16.9484448 0.5,9.5 C0.5,4.52952206 4.52943725,0.5 9.5,0.5 C12.3277083,0.5 14.8508336,1.80407476 16.5007741,3.84362242 C18.1491664,1.80407476 20.6722917,0.5 23.5,0.5 Z"
+    />
+  </svg>
+</label>
+`;
+
+exports[`HeartSwitch renders with the size="md" and default colors 1`] = `
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(13.5px);
+    -moz-transform: rotate(30deg) translateX(13.5px);
+    -ms-transform: rotate(30deg) translateX(13.5px);
+    transform: rotate(30deg) translateX(13.5px);
+  }
+
+  100% {
+    -webkit-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    -moz-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    -ms-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    -moz-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    -ms-transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+    transform: rotate(-30deg) translateX(20.25px) translateY(12px);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg) translateX(13.5px);
+    -moz-transform: rotate(30deg) translateX(13.5px);
+    -ms-transform: rotate(30deg) translateX(13.5px);
+    transform: rotate(30deg) translateX(13.5px);
+  }
+
+  75% {
+    -webkit-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    -moz-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    -ms-transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+    transform: rotate(30deg) translateX(6.75px) scaleX(1.1);
+  }
+
+  100% {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+.emotion-0 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.emotion-0 input {
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  -webkit-transition: border-width 50ms,background-color 350ms;
+  transition: border-width 50ms,background-color 350ms;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  margin: 0;
+  box-shadow: 0 0 3px 1.5px rgb(23 23 23 / 0.25);
+  outline: none;
+  border: 0 solid rgb(59 130 246 / 0.5);
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.emotion-0 input+svg {
+  display: block;
+  -webkit-transition: fill 350ms,stroke 350ms;
+  transition: fill 350ms,stroke 350ms;
+  width: 54px;
+  height: 37.5px;
+  fill: #ffffff;
+  stroke: #d1d1d1;
+  stroke-linejoin: round;
+}
+
+.emotion-0 input:checked {
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: #ffffff;
+}
+
+.emotion-0 input:checked+svg {
+  fill: #ff708f;
+  stroke: #ff4e74;
+}
+
+.emotion-0 input:not(:checked) {
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.emotion-0 input:focus {
+  border-width: 1.5px;
+}
+
+.emotion-0 input:focus:not(:focus-visible) {
+  border-width: 0;
+}
+
+.emotion-0 input:focus-visible {
+  border-width: 1.5px;
+}
+
+.emotion-0 input:invalid {
+  background-color: #ffffff;
+}
+
+.emotion-0 input:invalid+svg {
+  fill: #ffffff;
+  stroke: #d1d1d1;
+}
+
+.emotion-0[data-disabled='true'] {
+  cursor: default;
+}
+
+.emotion-0[data-disabled='true'] input {
+  background-color: #ffffff;
+}
+
+.emotion-0[data-disabled='true'] input+svg {
+  fill: #f2f2f2;
+  stroke: #d1d1d1;
+}
+
+<label
+  class="emotion-0"
+  data-disabled="false"
+  data-testid="heart-switch"
+>
+  <input
+    role="switch"
+    style="animation-duration: 350ms;"
+    type="checkbox"
+  />
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 33 23"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M23.5,0.5 C28.4705627,0.5 32.5,4.52943725 32.5,9.5 C32.5,16.9484448 21.46672,22.5 16.5,22.5 C11.53328,22.5 0.5,16.9484448 0.5,9.5 C0.5,4.52952206 4.52943725,0.5 9.5,0.5 C12.3277083,0.5 14.8508336,1.80407476 16.5007741,3.84362242 C18.1491664,1.80407476 20.6722917,0.5 23.5,0.5 Z"
+    />
+  </svg>
+</label>
+`;

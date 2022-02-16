@@ -1,1 +1,1 @@
-export * from './ProjectNameDisplay';
+export * from './HeartSwitch';
