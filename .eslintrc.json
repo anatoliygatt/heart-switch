@@ -47,6 +47,10 @@
         "plugin:testing-library/react",
         "plugin:jest-dom/recommended"
       ]
+    },
+    {
+      "files": ["src/**/*.stories.@(js|jsx|ts|tsx)"],
+      "extends": ["plugin:storybook/recommended"]
     }
   ]
 }
