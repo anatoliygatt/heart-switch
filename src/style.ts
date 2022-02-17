@@ -64,6 +64,7 @@ export const StyledHeartSwitch = styled.label<Required<OwnProps>>`
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 
   input {
     position: absolute;

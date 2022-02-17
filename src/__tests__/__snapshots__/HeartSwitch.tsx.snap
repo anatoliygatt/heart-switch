@@ -65,6 +65,7 @@ exports[`HeartSwitch renders with the default size and colors 1`] = `
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .emotion-0 input {
@@ -244,6 +245,7 @@ exports[`HeartSwitch renders with the size="lg" and custom colors 1`] = `
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .emotion-0 input {
@@ -423,6 +425,7 @@ exports[`HeartSwitch renders with the size="md" and default colors 1`] = `
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .emotion-0 input {
