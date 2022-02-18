@@ -1,3 +1,9 @@
+### [1.0.2](https://github.com/anatoliygatt/heart-switch/compare/v1.0.1...v1.0.2) (2022-02-18)
+
+### Performance Improvements
+
+- reduce bundle size by removing dependency on react-use ([0709ec8](https://github.com/anatoliygatt/heart-switch/commit/0709ec8cbd87e666ef28e1c94e57e155df062520))
+
 ### [1.0.1](https://github.com/anatoliygatt/heart-switch/compare/v1.0.0...v1.0.1) (2022-02-17)
 
 ### Bug Fixes
