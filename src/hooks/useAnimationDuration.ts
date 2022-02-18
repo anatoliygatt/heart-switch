@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { useFirstMountState, usePrevious } from 'react-use';
+import { useFirstMountState } from './useFirstMountState';
+import { usePrevious } from './usePrevious';
 
 export function useAnimationDuration<T>(
   state: T,

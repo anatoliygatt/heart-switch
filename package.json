@@ -51,9 +51,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "react-use": "^17.3.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.17.4",
     "@commitlint/cli": "^16.2.1",

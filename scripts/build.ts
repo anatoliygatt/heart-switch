@@ -5,10 +5,7 @@ import * as pkg from '../package.json';
 const commonBuildOptions: BuildOptions = {
   bundle: true,
   entryPoints: ['src/index.ts'],
-  external: [
-    ...Object.keys(pkg.dependencies),
-    ...Object.keys(pkg.peerDependencies),
-  ],
+  external: [...Object.keys(pkg.peerDependencies)],
   minify: true,
   sourcemap: true,
 };
