@@ -55,16 +55,16 @@ describe('HeartSwitch', () => {
     expect(onFocus).toHaveBeenCalled();
   });
 
-  test('checks/unchecks on click when uncontrolled', () => {
+  test('checks/unchecks on click when uncontrolled', async () => {
     render(<HeartSwitch />);
     expect(screen.getByRole('switch')).not.toBeChecked();
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
     expect(screen.getByRole('switch')).toBeChecked();
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
     expect(screen.getByRole('switch')).not.toBeChecked();
   });
 
-  test('checks/unchecks on click when controlled', () => {
+  test('checks/unchecks on click when controlled', async () => {
     function ControlledHeartSwitch() {
       const [checked, setChecked] = React.useState<boolean>(false);
       return (
@@ -79,9 +79,9 @@ describe('HeartSwitch', () => {
 
     render(<ControlledHeartSwitch />);
     expect(screen.getByRole('switch')).not.toBeChecked();
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
     expect(screen.getByRole('switch')).toBeChecked();
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
     expect(screen.getByRole('switch')).not.toBeChecked();
   });
 
@@ -115,7 +115,7 @@ describe('HeartSwitch', () => {
     );
   });
 
-  test('responds to a change in validity state when required=true', () => {
+  test('responds to a change in validity state when required=true', async () => {
     const onInvalid = jest.fn();
 
     render(<HeartSwitch required onInvalid={onInvalid} />);
@@ -124,7 +124,7 @@ describe('HeartSwitch', () => {
     expect(screen.getByRole('switch')).toBeInvalid();
     expect(onInvalid).toHaveBeenCalled();
 
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
 
     expect(screen.getByRole('switch')).toBeValid();
   });
@@ -147,7 +147,7 @@ describe('HeartSwitch', () => {
     );
   });
 
-  test('renders in an unfocusable state when tabIndex=-1', () => {
+  test('renders in an unfocusable state when tabIndex=-1', async () => {
     const onFocus = jest.fn();
 
     render(<HeartSwitch tabIndex={-1} onFocus={onFocus} />);
@@ -156,13 +156,13 @@ describe('HeartSwitch', () => {
     expect(screen.getByRole('switch')).not.toHaveFocus();
     expect(onFocus).not.toHaveBeenCalled();
 
-    userEvent.tab();
+    await userEvent.tab();
 
     expect(screen.getByRole('switch')).not.toHaveFocus();
     expect(onFocus).not.toHaveBeenCalled();
   });
 
-  test('renders in a disabled but focusable state when aria-disabled="true"', () => {
+  test('renders in a disabled but focusable state when aria-disabled="true"', async () => {
     const onBlur = jest.fn();
     const onFocus = jest.fn();
 
@@ -180,22 +180,22 @@ describe('HeartSwitch', () => {
     expect(onBlur).not.toHaveBeenCalled();
     expect(onFocus).not.toHaveBeenCalled();
 
-    userEvent.tab();
+    await userEvent.tab();
 
     expect(screen.getByRole('switch')).toHaveFocus();
     expect(onBlur).not.toHaveBeenCalled();
     expect(onFocus).toHaveBeenCalled();
 
-    userEvent.keyboard('{space/}');
+    await userEvent.keyboard('{space/}');
 
     expect(screen.getByRole('switch')).not.toBeChecked();
 
-    userEvent.tab();
+    await userEvent.tab();
 
     expect(screen.getByRole('switch')).not.toHaveFocus();
     expect(onBlur).toHaveBeenCalled();
 
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
 
     expect(screen.getByRole('switch')).not.toBeChecked();
   });
@@ -224,7 +224,7 @@ describe('HeartSwitch', () => {
     );
   });
 
-  test('responds to a change in focused state when tabbing with the keyboard', () => {
+  test('responds to a change in focused state when tabbing with the keyboard', async () => {
     const onBlur = jest.fn();
     const onFocus = jest.fn();
 
@@ -234,19 +234,19 @@ describe('HeartSwitch', () => {
     expect(onBlur).not.toHaveBeenCalled();
     expect(onFocus).not.toHaveBeenCalled();
 
-    userEvent.tab();
+    await userEvent.tab();
 
     expect(screen.getByRole('switch')).toHaveFocus();
     expect(onBlur).not.toHaveBeenCalled();
     expect(onFocus).toHaveBeenCalled();
 
-    userEvent.tab();
+    await userEvent.tab();
 
     expect(screen.getByRole('switch')).not.toHaveFocus();
     expect(onBlur).toHaveBeenCalled();
   });
 
-  test('integrates with a form', () => {
+  test('integrates with a form', async () => {
     render(
       <form data-testid="complianceForm">
         <input type="text" name="fullName" defaultValue="Anatoliy Gatt" />
@@ -259,7 +259,7 @@ describe('HeartSwitch', () => {
       acceptTermsAndConditions: false,
     });
 
-    userEvent.click(screen.getByTestId('heart-switch'));
+    await userEvent.click(screen.getByTestId('heart-switch'));
 
     expect(screen.getByTestId('complianceForm')).toHaveFormValues({
       fullName: 'Anatoliy Gatt',
