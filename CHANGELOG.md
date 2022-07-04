@@ -1,3 +1,9 @@
+### [1.0.3](https://github.com/anatoliygatt/heart-switch/compare/v1.0.2...v1.0.3) (2022-07-04)
+
+### Bug Fixes
+
+- **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([7fa58ce](https://github.com/anatoliygatt/heart-switch/commit/7fa58ce8d78e95b4b241529b2cda153df1ffe6ec))
+
 ### [1.0.2](https://github.com/anatoliygatt/heart-switch/compare/v1.0.1...v1.0.2) (2022-02-18)
 
 ### Performance Improvements
