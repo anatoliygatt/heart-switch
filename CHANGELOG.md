@@ -1,3 +1,9 @@
+### [1.0.4](https://github.com/anatoliygatt/heart-switch/compare/v1.0.3...v1.0.4) (2022-08-30)
+
+### Bug Fixes
+
+- **deps:** bump npm from 8.5.0 to 8.13.2 ([613d235](https://github.com/anatoliygatt/heart-switch/commit/613d235a82b64ac4e6757ca8a6362c5a2607c96f))
+
 ### [1.0.3](https://github.com/anatoliygatt/heart-switch/compare/v1.0.2...v1.0.3) (2022-07-04)
 
 ### Bug Fixes
