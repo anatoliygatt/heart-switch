@@ -1,3 +1,9 @@
+### [1.0.5](https://github.com/anatoliygatt/heart-switch/compare/v1.0.4...v1.0.5) (2022-09-10)
+
+### Bug Fixes
+
+- **deps:** bump terser from 4.8.0 to 4.8.1 ([5be056f](https://github.com/anatoliygatt/heart-switch/commit/5be056f3f12dfa1cc5483dfedfc624334fd4637b))
+
 ### [1.0.4](https://github.com/anatoliygatt/heart-switch/compare/v1.0.3...v1.0.4) (2022-08-30)
 
 ### Bug Fixes
