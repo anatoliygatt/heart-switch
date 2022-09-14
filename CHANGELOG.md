@@ -1,3 +1,9 @@
+### [1.0.6](https://github.com/anatoliygatt/heart-switch/compare/v1.0.5...v1.0.6) (2022-09-14)
+
+### Bug Fixes
+
+- **deps-peer:** allow usage of react@^18.0.0 ([1150656](https://github.com/anatoliygatt/heart-switch/commit/11506569fa313ef4b4acaef2083b56e99db5d726))
+
 ### [1.0.5](https://github.com/anatoliygatt/heart-switch/compare/v1.0.4...v1.0.5) (2022-09-10)
 
 ### Bug Fixes
