@@ -1,3 +1,9 @@
+### [1.0.7](https://github.com/anatoliygatt/heart-switch/compare/v1.0.6...v1.0.7) (2022-12-06)
+
+### Bug Fixes
+
+- **deps:** bump loader-utils from 1.4.0 to 1.4.2 ([363966b](https://github.com/anatoliygatt/heart-switch/commit/363966be0e9b7c16762f13fcf8813c0dfdfcb36a))
+
 ### [1.0.6](https://github.com/anatoliygatt/heart-switch/compare/v1.0.5...v1.0.6) (2022-09-14)
 
 ### Bug Fixes
