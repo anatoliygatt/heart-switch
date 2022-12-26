@@ -1,3 +1,9 @@
+### [1.0.9](https://github.com/anatoliygatt/heart-switch/compare/v1.0.8...v1.0.9) (2022-12-26)
+
+### Bug Fixes
+
+- **deps:** bump decode-uri-component from 0.2.0 to 0.2.2 ([47eefb4](https://github.com/anatoliygatt/heart-switch/commit/47eefb465be2b705fe31c67817af1c0389549139))
+
 ### [1.0.8](https://github.com/anatoliygatt/heart-switch/compare/v1.0.7...v1.0.8) (2022-12-26)
 
 ### Bug Fixes
