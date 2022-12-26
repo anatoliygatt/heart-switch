@@ -1,3 +1,9 @@
+### [1.0.8](https://github.com/anatoliygatt/heart-switch/compare/v1.0.7...v1.0.8) (2022-12-26)
+
+### Bug Fixes
+
+- **README:** update github ci workflow status badge url ([da35d29](https://github.com/anatoliygatt/heart-switch/commit/da35d29f5e77e036179e13db716d45270e78766c))
+
 ### [1.0.7](https://github.com/anatoliygatt/heart-switch/compare/v1.0.6...v1.0.7) (2022-12-06)
 
 ### Bug Fixes
