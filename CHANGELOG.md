@@ -1,3 +1,9 @@
+### [1.0.10](https://github.com/anatoliygatt/heart-switch/compare/v1.0.9...v1.0.10) (2022-12-30)
+
+### Bug Fixes
+
+- **deps:** bump qs and express ([562072a](https://github.com/anatoliygatt/heart-switch/commit/562072adaff0209c5e2012d980d4d05b5e2ef895))
+
 ### [1.0.9](https://github.com/anatoliygatt/heart-switch/compare/v1.0.8...v1.0.9) (2022-12-26)
 
 ### Bug Fixes
