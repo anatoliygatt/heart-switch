@@ -1,3 +1,9 @@
+### [1.0.11](https://github.com/anatoliygatt/heart-switch/compare/v1.0.10...v1.0.11) (2023-01-16)
+
+### Bug Fixes
+
+- **deps:** bump json5 from 1.0.1 to 1.0.2 ([e141d70](https://github.com/anatoliygatt/heart-switch/commit/e141d70523e2010c7ee2f6a0f9ff18d0cfdd7dea))
+
 ### [1.0.10](https://github.com/anatoliygatt/heart-switch/compare/v1.0.9...v1.0.10) (2022-12-30)
 
 ### Bug Fixes
