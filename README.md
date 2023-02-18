@@ -7,7 +7,7 @@
 <br>
 
 <h1 align="center">heart-switch</h1>
-<h3 align="center">A heart-shaped toggle switch component for <a href="https://reactjs.org">React</a>. Inspired by Tore Bernhoft's <a href="https://dribbble.com/shots/8306407-I-heart-toggle">I heart toggle</a> Dribbble shot.</h3>
+<h3 align="center">A heart-shaped toggle switch component for <a href="https://reactjs.org">React</a>. Inspired by Tore Bernhoft's <a href="https://dribbble.com/shots/8306407-I-heart-toggle">I heart toggle</a> Dribbble shot and Aaron Iker's <a href="https://codepen.io/aaroniker/full/PowbEKp">Codepen</a>.</h3>
 
 <br>
 
