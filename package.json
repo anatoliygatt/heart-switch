@@ -1,6 +1,6 @@
 {
   "name": "@anatoliygatt/heart-switch",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A heart-shaped toggle switch component for React.",
   "keywords": [
     "react",

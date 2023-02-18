@@ -1,3 +1,9 @@
+### [1.0.12](https://github.com/anatoliygatt/heart-switch/compare/v1.0.11...v1.0.12) (2023-02-18)
+
+### Bug Fixes
+
+- **README:** add a link to Aaron Iker's codepen ([a6a7f74](https://github.com/anatoliygatt/heart-switch/commit/a6a7f747a1af2e6d7689c5430ad935b329f17bcd))
+
 ### [1.0.11](https://github.com/anatoliygatt/heart-switch/compare/v1.0.10...v1.0.11) (2023-01-16)
 
 ### Bug Fixes
