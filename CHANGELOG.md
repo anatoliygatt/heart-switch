@@ -1,3 +1,9 @@
+### [1.0.13](https://github.com/anatoliygatt/heart-switch/compare/v1.0.12...v1.0.13) (2023-03-10)
+
+### Bug Fixes
+
+- **deps:** bump minimist from 1.2.5 to 1.2.7 ([55a6e1d](https://github.com/anatoliygatt/heart-switch/commit/55a6e1d5fd172b0e987a53c7169192f414b3f80e))
+
 ### [1.0.12](https://github.com/anatoliygatt/heart-switch/compare/v1.0.11...v1.0.12) (2023-02-18)
 
 ### Bug Fixes
